@@ -1,0 +1,110 @@
+@import '_colors';
+
+.cont-menu{
+    color: $text-color;
+    height: 60px;
+    border-bottom: 1px solid #E5E7EB;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    &::before,
+    &::after{
+        content: '';
+        width: 8%;
+    }
+
+    .logo{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu-options{
+        height: 100%;
+        width: 80%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .item-menu{
+            margin: 5px 20px;
+            text-decoration: none;
+            color: $text-color;
+            &:hover{
+                color: #000000;
+            }
+        }
+        .activo{
+            color: #000000;
+        }
+    }
+
+    .icono-menu{
+        width: 80%;
+        height: 100%;
+        color: $gray-color;
+        display: none;
+    }
+
+    .logo{
+        .img-logo{
+            width: 50px;
+        }
+    }
+
+    
+
+}
+
+@media (max-width: 768px){
+    .cont-menu{
+        .menu-options{
+            background: cyan;
+            display: none;
+        }
+
+        .icono-menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            cursor: pointer;
+
+            .dibujo-menu{
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .linea{
+                    width: 80%;
+                    height: 3px;
+                    background: $gray-color;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
+
+                    &::before,
+                    &::after{
+                        content: '';
+                        height: 3px;
+                        background: $gray-color;
+                    }
+
+                    &::before{
+                        margin-top: -9px;
+                        width: 100%;
+                    }
+                    &::after{
+                        margin-top: 9px;
+                        width: 80%;
+                    }
+                }
+            }
+        }   
+    }
+}
