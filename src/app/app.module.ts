@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 
-import { PagesModule } from './pages/pages.module'
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [

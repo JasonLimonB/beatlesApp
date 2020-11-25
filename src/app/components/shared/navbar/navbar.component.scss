@@ -3,11 +3,14 @@
 .cont-menu{
     color: $text-color;
     height: 60px;
-    border-bottom: 1px solid #E5E7EB;
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
-
+    background: #ffffff;
+    margin-bottom: 10px;
+    
+    
     &::before,
     &::after{
         content: '';
@@ -55,9 +58,6 @@
             width: 50px;
         }
     }
-
-    
-
 }
 
 @media (max-width: 768px){

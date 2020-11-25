@@ -8,6 +8,9 @@ import { AlbumesComponent } from './albumes/albumes.component';
 import { CancionesComponent } from './canciones/canciones.component';
 import { Error404Component } from './error404/error404.component';
 
+//Servicios Http
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     HomeComponent, 
@@ -17,7 +20,8 @@ import { Error404Component } from './error404/error404.component';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
   exports: [
     HomeComponent,

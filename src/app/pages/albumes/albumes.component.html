@@ -1,1 +1,9 @@
-<p>albumes works!</p>
+<div class="container">
+    <h2>Álbumes</h2>
+    <hr />
+    <p>Si eres un fan de The Beatles no tendras problemas en reconocerlos</p>
+</div>
+
+<div class="card-cont">
+    <app-album-card *ngFor="let alb of albumes" [album]=alb ></app-album-card>
+</div>

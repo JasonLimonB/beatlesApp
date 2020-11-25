@@ -1,0 +1,70 @@
+@import '_colors';
+
+.container-card{
+    box-shadow: 0 0 8px 0 rgba(92, 92, 92, 0.4);
+    color: $text-color;
+}
+@media screen and (max-width: 360px){
+    .container-card{
+        width: 260px;
+        margin-top: 30px;
+        padding: 10px 10px;
+
+        .cont-img{
+            img{
+                width: 260px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .container-card{
+        width: 300px;
+        margin-top: 30px;
+        padding: 10px 10px;
+        
+        .cont-img{
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px){
+    .container-card{
+        width: 300px;
+        margin-top: 30px;
+        padding: 10px 10px;
+        
+        .cont-img{
+            img{
+                width: 300px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .container-card{
+        width: 360px;
+        margin-top: 30px;
+        padding: 10px 10px;
+        
+        .cont-img{
+            img{
+                width: 360px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1202px){
+    .container-card{
+        width: 390px;
+        margin-top: 30px;
+        padding: 10px 10px;
+        .cont-img{
+            img{
+                width: 390px;
+            }
+        }
+    }
+}

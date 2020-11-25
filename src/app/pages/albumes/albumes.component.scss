@@ -1,0 +1,49 @@
+@import '_colors';
+.container{
+    width: 80%;
+    margin: auto;
+    color: $text-color;
+}
+
+
+@media screen and (max-width: 360px){
+    .card-cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 992px){
+    .card-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1200px){
+    .card-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1202px){
+    .card-cont{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

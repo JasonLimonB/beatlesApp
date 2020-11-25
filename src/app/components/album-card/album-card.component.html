@@ -1,0 +1,10 @@
+<div class="container-card">
+    <div class="cont-img">
+        <img src="{{ album.urlImage }}" />
+    </div>
+    <div class="cont-info">
+        <h3>{{ album.name }}</h3>
+        <p> Total de canciones: {{ album.numCanciones }}</p>
+        <p> {{ album.fechaLanzamineto | miFecha }} </p>
+    </div>
+</div>
