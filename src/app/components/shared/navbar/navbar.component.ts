@@ -9,7 +9,11 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  modal: boolean = false;
+
   ngOnInit(): void {
   }
+
+  openModal(){this.modal = !this.modal;}
 
 }

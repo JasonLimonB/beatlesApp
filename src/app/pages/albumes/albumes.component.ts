@@ -22,4 +22,8 @@ export class AlbumesComponent implements OnInit {
       });
   }
 
+  nuevoAlbum(){
+    console.log("Diste click y esto hara que vatas a crear un nuevo album");
+  }
+
 }

@@ -5,6 +5,7 @@ import { AlbumCardComponent } from './album-card/album-card.component';
 
 // pipe 
 import { MiFechaPipe } from '../pipes/mi-fecha.pipe';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -12,14 +13,16 @@ import { MiFechaPipe } from '../pipes/mi-fecha.pipe';
   declarations: [
     BannerComponent, 
     AlbumCardComponent,
-    MiFechaPipe
+    MiFechaPipe,
+    LoaderComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     BannerComponent,
-    AlbumCardComponent
+    AlbumCardComponent,
+    LoaderComponent
   ]
 })
 export class ComponentsModule { }

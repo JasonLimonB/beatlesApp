@@ -1,1 +1,44 @@
-<p>canciones works!</p>
+<app-loader *ngIf="canciones.length === 0"></app-loader>
+<div class="container">
+    <h2>Canciones</h2>
+    <hr />
+    <p>Crees que no hizo falta una canción, puedes <a class="nueva-cancion" (click)="nuevaCancion()">agregar una canción</a></p>
+</div>
+
+<div class="canciones-cont" *ngIf="canciones.length !== 0" >
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th>Álbum</th>
+                <th>Canción</th>
+                <th>Descripción</th>
+                <th>Top 10</th>
+                <th>Top #1</th>
+                <th>Autor</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr *ngFor="let data of canciones">
+                <td class="td"> {{ data.nombreAlbum }} </td>
+                <td class="td"> {{ data.nombreCancion }} </td>
+                <td class="td"> {{ data.descripcion }} </td>
+                <td class="td">
+                    <p *ngIf="data.top_diez"> <img class="correcto" src="../../../assets/correcto.svg" width="25px" /></p>
+                    <p *ngIf="!data.top_diez"> - </p>
+                </td>
+                <td class="td">
+                    <p *ngIf="data.top_uno" class="correcto"> <img src="../../../assets/correcto.svg" width="25px"/> </p>
+                    <p *ngIf="!data.top_uno"> - </p>
+                </td>
+                <td class="td"> 
+                    <p *ngIf="data.johnLennon" >John Lennon</p> 
+                    <p *ngIf="data.paulMccartney">Paul Mccartney</p>
+                    <p *ngIf="data.ringoStark">Ringo Stark</p>
+                    <p *ngIf="data.georgeHarrison">George Harrison</p>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+

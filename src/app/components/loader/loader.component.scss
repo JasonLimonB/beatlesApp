@@ -1,0 +1,19 @@
+.cont-loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 77, 77, 0.363);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .contenido{
+        width: 350px;
+        height: 270px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

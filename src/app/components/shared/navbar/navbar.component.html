@@ -3,13 +3,27 @@
         <img src=".../../../../../../assets/logo/Lennon.png" class="img-logo"/>
     </div>
     <div class="menu-options">
-        <a [routerLink]="['home']" routerLinkActive='activo' class="item-menu">Home</a>
-        <a [routerLink]="['albumes']" routerLinkActive='activo' class="item-menu">Albumes</a>
-        <a [routerLink]="['canciones']"  routerLinkActive='activo' class="item-menu">Canciones</a>
+        <a [routerLink]="['/home']" routerLinkActive='activo' class="item-menu">Home</a>
+        <a [routerLink]="['/albumes']" routerLinkActive='activo' class="item-menu">Albumes</a>
+        <a [routerLink]="['/canciones']"  routerLinkActive='activo' class="item-menu">Canciones</a>
     </div>
     <div class="icono-menu">
-        <div class="dibujo-menu">
+        <div class="dibujo-menu" (click)="openModal()">
             <div class="linea"></div>
         </div>
+    </div>
+</div>
+
+<div class="contenido-modal" *ngIf="modal">
+   
+    <div class="nuevo-menu">
+        <div class="cerrar">
+            <div class="icono-cerrar" (click)="openModal()">
+                <img src="../../../../assets/error.svg" width="25px">
+            </div>
+        </div>
+        <a [routerLink]="['/home']" class="item-menu" (click)="openModal()">Home_</a>
+        <a [routerLink]="['/albumes']" class="item-menu" (click)="openModal()">Albumes_</a>
+        <a [routerLink]="['/canciones']"  class="item-menu" (click)="openModal()">Canciones_</a>
     </div>
 </div>

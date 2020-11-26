@@ -3,8 +3,12 @@
     width: 80%;
     margin: auto;
     color: $text-color;
-}
 
+    .nuevo-album{
+        color: $purple-color;
+        cursor: pointer;
+    }
+}
 
 @media screen and (max-width: 360px){
     .card-cont{

@@ -1,0 +1,40 @@
+@import '_colors';
+
+.container{
+    width: 80%;
+    color: $text-color;
+    margin: auto;
+
+    .nueva-cancion{
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
+.canciones-cont{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .table{
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        .thead{
+            text-align: center;
+            color: $text-color;
+        }
+        .tbody{
+            text-align: center;
+            .td{
+                padding: 20px;
+                color: $text-color;
+                .correcto{
+                    width: 50px;
+                }
+            }
+            
+        }
+    }
+}
