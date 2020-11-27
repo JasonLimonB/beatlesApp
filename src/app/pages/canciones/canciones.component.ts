@@ -20,8 +20,6 @@ export class CancionesComponent implements OnInit {
       this._SCanciones.getCanciones()
       .subscribe(data =>{
         this.canciones = data;
-        console.log(this.canciones);
-        
       });
     }, 1000);
   }
